@@ -23,7 +23,7 @@ class CreatePostsTable extends Migration
             
             $table->timestamps();
 
-            $table->foreign('course_id')->reference('id')->on('courses');
+            $table->foreign('course_id')->references('id')->on('courses');
         });
     }
 
